@@ -1,0 +1,243 @@
+$principal: #3D3D3D;
+$blanco: #f9f9f9;
+
+.bg-image {
+    background-image: url('../Assets/Header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+    text-align: right;
+    align-content: right;
+    color: #000000;
+    opacity: 100%;
+}
+
+section {
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color:#3D3D3D;
+}
+
+
+#Nosotros h2 {
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+.SeccionOscura {
+    background-color: $principal;
+    color: #FFFFFF;
+    padding: 40px;
+}
+
+.VerMas {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.CargarMas {
+    text-decoration: none;
+    text-align: center;
+}
+
+.TextoBlanco {
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $principal;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    font-size:100px;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+.ProyectosArq {
+	background-color: $blanco;
+	height: 250px;
+    margin: 1px;
+    text-transform:uppercase;
+    margin-top:-150px; 
+    margin-bottom:60px;
+}
+
+.Renders {
+	background-color: $blanco;
+	height: 250px;
+    margin: 1px;
+    text-transform:uppercase;
+    margin-top:-150px; 
+    margin-bottom:60px;
+}
+
+.ProyectosArq:hover {
+    background-image: url('../Assets/INT\ DOBLE\ ALTURA.jpg') ;
+    width: 100%;
+    height: 250px;
+    color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.Renders:hover {
+    background-image: url('../Assets/FRENTE\ FINAL2\ copy.jpg') ;
+    width: 100%;
+    height: 250px;
+    color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.Filtro {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.rowPadding {
+    padding-top: 30px;
+}
+
+.serviciosContainerx2 {
+    background-color: $blanco;
+    padding: 60px;
+    margin-top: 30px;
+}
+
+.serviciosContainer {
+    background-color: $principal;
+    padding: 80px;
+}
+
+.serviciosContainer h2 {
+    color: $blanco;
+}
+
+.card-deck .card {
+    padding: 32px 32px 0;
+    margin: 16px;
+    border-radius: 0;
+    border: 0;
+    background-color: #3D3D3D;
+}
+
+.card-deck .card:hover {
+    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+    background-color: $blanco;
+}
+
+.card-deck .card:hover .card-title{
+    color: $principal;
+}
+
+.card-deck .card .card-body {
+    padding: 0;
+}
+
+.card-deck .card .card-img-top{
+    margin-bottom: 24px;
+    border-radius: 0px;
+    height: 80px;
+}
+
+.card-deck .card .card-title {
+    color: $blanco;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-deck .card .card-text {
+    color: $blanco;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.card-deck .card:hover .card-text {
+    color: $principal;
+}
+
+.map {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.Contacto {
+    background-color: $principal;
+    color: $blanco;
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.DatosDeContacto {
+    border-color: $blanco;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.Contacto h2 {
+    color: $blanco;
+}
+
+.Contacto h4 {
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid {
+        display: grid;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+        grid-template-columns: 300px;
+        justify-items: stretch;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0;
+    }
+
+    .marginImg {
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1239px){
+    .grid {
+        display: grid;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: 450px 450px;
+        justify-items: stretch;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0;
+    }
+
+    .marginImg {
+        margin: 20px;
+    }
+}

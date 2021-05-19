@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="Estudio, Arquitectura, Contacto">
+    <meta name="description" content="Ingresá para ver nuestros teléfonos y ubicación o contactate directamente desde la web.">
+    <title>ReG Studio - Contacto</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/Estilos.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">ReG Studio</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">  
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="Contacto">
+        <h2>Contacto</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-8 col-sm-12">
+                <form action="#">
+                    <label for="Nombre">Nombre: <input type="text" name="Nombre"></label> <br>
+                    <label for="Apellido">Apellido: <input type="text" name="Apellido"></label> <br>
+                    <div>
+                        Pais
+                        <select name="Pais" id="">
+                            <option value="Argentina">Argentina</option>
+                            <option value="España">España</option>
+                            <option value="Portugal">Portugal</option>
+                        </select>
+                    </div>
+                    <div>
+                        ¿Qué servicio necesitás?
+                        <br>
+                        <span>Proyecto de Arquitectura</span>
+                        <input type="checkbox" name="Servicio" value="Proyecto de Arquitectura">
+                        <br>
+                        <span>Render</span>
+                        <input type="checkbox" name="Servicio2" value="Render">
+                    </div>
+                    <div>
+                        Comentarios
+                        <br>
+                        <textarea name="Comentarios" id="" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar Formulario">
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sm-12 DatosDeContacto">
+                <h2>Datos de Contacto</h2>
+                <span></span>
+                <h4>Lorem</h4>
+                <h4>Ipsum</h4>
+                <h4>Dolor</h4>
+                <h4>Sit</h4>
+                <h4>Amet</h4>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52666.122653503866!2d-58.668474672856945!3d-34.41068149848668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca41d589d6487%3A0x9efd06924549bdb5!2sRinc%C3%B3n%20de%20Milberg%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1617921031694!5m2!1sen!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer>
+        <p>footer</p>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
