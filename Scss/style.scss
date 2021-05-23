@@ -13,6 +13,14 @@ section {
     height: 500px;
 }
 
+.bg-image2 {
+    background-image: url('../Assets/Casa\ MT\ Fondo-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position-y: -150px;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -35,6 +43,7 @@ h2 {
     p {
         padding-left: 15px;
         padding-right: 15px;
+        text-align: justify;
     }
 }
 
@@ -49,10 +58,19 @@ h2 {
     padding: 40px;
 }
 
-.VerMas {
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: right;
+.SeccionOscura {
+    p {
+        text-align: justify;
+    }
+}
+
+.btn-secondary {
+    background-color: $principal;
+    color: $blanco;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 .CargarMas {
@@ -96,28 +114,45 @@ h3 {
 }
 
 .ProyectosArq:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../Assets/INT\ DOBLE\ ALTURA.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../Assets/Casa\ MT\ Frente-min.jpg');
     width: 100%;
     height: 250px;
     color: #FFFFFF;
     background-position: center;
     background-size: cover;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 
 .Renders:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../Assets/FRENTE\ FINAL2\ copy.jpg') ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../Assets/Casa\ RM\ -\ min.jpg') ;
     width: 100%;
     height: 250px;
     color: #FFFFFF;
     background-position: center;
     background-size: cover;
-    background-blend-mode: darken;
+    -webkit-transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out;
 }
 
 img {
     object-fit: cover;
     width: 100%;
     height: 300px;
+}
+
+.card-img-top {
+    width: 100px;
+}
+
+.imgSocios {
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+}
+
+.nosotrosTexto {
+    padding-top: 15px;
 }
 
 .image {
@@ -272,7 +307,21 @@ img {
     text-align: left;
 }
 
-#footer .container-fluid .first .col-md-6 a {
+.client {
+    margin-top: 20px;
+}
+  
+.client .thumbnail:hover {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.client {
+    img {
+        height: 100px;
+    }
+}
+
+#footer .container-fluid .col-sm-6 a {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -282,8 +331,15 @@ img {
     margin-bottom: 18px;
 }
 
-#footer .container-fluid .first .col-md-6 a:hover {
+#footer .container-fluid .col-sm-6 a:hover {
     color: #000000;
+}
+
+#footer {
+    img {
+        height: 200px;
+        size: 200px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
