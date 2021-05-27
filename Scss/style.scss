@@ -306,6 +306,52 @@ img {
     color: $principal;
 }
 
+#why-choose-us {
+    
+    h2 {
+        margin-bottom:40px;
+        text-align:left;
+        font-size:45px;
+    }
+
+    .service-row > div {
+        padding-left:70px;
+        padding-bottom:40px;
+    }
+    
+    .service-row {
+        
+        h4 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            line-height: 1.4em;
+            text-align:left;
+        }
+
+        p {
+            font-size:15px;
+        }
+
+        .service-icon {
+            padding:10px;
+            position:absolute;
+            top:0;
+            left:0;
+            height:auto;
+            width:auto;
+            line-height:1em;
+
+            i {
+                font-size: 22px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                color:#fff;
+            }
+        }
+    }
+}
+
 .map {
     width: 100%;
     height: 350px;

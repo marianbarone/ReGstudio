@@ -246,6 +246,39 @@ img {
 .card-deck .card:hover .card-text {
   color: #3D3D3D; }
 
+#why-choose-us h2 {
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 45px; }
+
+#why-choose-us .service-row > div {
+  padding-left: 70px;
+  padding-bottom: 40px; }
+
+#why-choose-us .service-row h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.4em;
+  text-align: left; }
+
+#why-choose-us .service-row p {
+  font-size: 15px; }
+
+#why-choose-us .service-row .service-icon {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: auto;
+  line-height: 1em; }
+  #why-choose-us .service-row .service-icon i {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff; }
+
 .map {
   width: 100%;
   height: 350px;
