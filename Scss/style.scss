@@ -27,7 +27,6 @@ section {
     background-size:cover;
     height: 600px;
     background-position-y: -200px;
-    background-position-x: -40px;
 }
 
 body {
@@ -202,8 +201,6 @@ img {
     flex-direction: column;
     align-items: left;
     opacity: 0;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
 }
 
 .image__overlay:hover {
@@ -243,18 +240,18 @@ img {
     margin-top: 20px;
 }
 
-.serviciosContainerx2 {
-    background-color: $blanco;
-    padding: 60px;
-}
 
 .serviciosContainer {
-    background-color: $principal;
-    padding: 80px;
+    background-color: $blanco;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .serviciosContainer h2 {
-    color: $blanco;
+    color: $principal;
 }
 
 .card-deck .card {
@@ -262,7 +259,7 @@ img {
     margin: 16px;
     border-radius: 0;
     border: 0;
-    background-color: #3D3D3D;
+    background-color: $blanco;
 }
 
 .card-deck .card:hover {
@@ -281,25 +278,28 @@ img {
 .card-deck .card .card-img-top{
     margin-bottom: 24px;
     border-radius: 0px;
-    height: 250px;
-    background-size:cover;
-    width:auto;
+    height: 200px;
+    width: 200px;
+    background-size:contain;
+    align-self: center;
 }
 
 .card-deck .card .card-title {
-    color: $blanco;
+    color: $principal;
     font-size: 20px;
     line-height: 1.6;
     font-weight: 700;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .card-deck .card .card-text {
-    color: $blanco;
+    color: $principal;
     font-size: 14px;
     line-height: 1.71;
     font-weight: 400;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .card-deck .card:hover .card-text {
@@ -309,7 +309,9 @@ img {
 #why-choose-us {
     
     h2 {
+        margin-top:40px;
         margin-bottom:40px;
+        margin-left: 70px;
         text-align:left;
         font-size:45px;
     }
@@ -381,15 +383,24 @@ img {
 
 .client {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
-  
+
 .client .thumbnail:hover {
     background: rgba(0, 0, 0, 0.55);
+    -webkit-transform: scale(1.1);
 }
 
 .client {
-    img {
+    .thumbnail {
         height: 100px;
+        width: 200px;
+        background-size: contain;
+
+        img {
+           width: 100%;
+           max-height: 100%; 
+        }
     }
 }
 
@@ -413,6 +424,7 @@ img {
         size: 200px;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
 
