@@ -255,31 +255,18 @@ img {
 
 #why-choose-us .service-row > div {
   padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 40px; }
 
-#why-choose-us .service-row h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  line-height: 1.4em;
-  text-align: left; }
-
-#why-choose-us .service-row p {
-  font-size: 15px; }
-
-#why-choose-us .service-row .service-icon {
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: auto;
-  width: auto;
-  line-height: 1em; }
-  #why-choose-us .service-row .service-icon i {
-    font-size: 22px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    color: #fff; }
+#why-choose-us .service-row {
+  margin-right: 0px; }
+  #why-choose-us .service-row h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4em;
+    text-align: left; }
+  #why-choose-us .service-row p {
+    font-size: 15px; }
 
 .map {
   width: 100%;
@@ -305,7 +292,8 @@ img {
 
 .client {
   margin-top: 20px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-right: 70px; }
 
 .client .thumbnail:hover {
   background: rgba(0, 0, 0, 0.55);
@@ -314,10 +302,14 @@ img {
 .client .thumbnail {
   height: 100px;
   width: 200px;
-  background-size: contain; }
+  padding: 20px; }
   .client .thumbnail img {
-    width: 100%;
-    max-height: 100%; }
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center; }
+  .client .thumbnail .logo2 {
+    background-position-x: right; }
 
 #footer .container-fluid .col-sm-6 a {
   font-style: normal;
