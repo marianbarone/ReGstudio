@@ -429,17 +429,13 @@ img {
     .thumbnail {
         height: 100px;
         width: 100%;
-        padding: 20px;
+        padding: 30px;
 
         img {
-           max-width: 100%;
+           max-width: 187.5px;
            height: 100%; 
-           object-fit: contain;
+           object-fit:fill;
            object-position: center;
-        }
-
-        .logo2 {
-            background-position-x: right;
         }
     }
 }
