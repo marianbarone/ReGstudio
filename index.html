@@ -57,7 +57,7 @@
     </section>
 
     <section class="row card-deck-servicios justify-content-md-center">
-        <div class="ProyectosArq col-sm-12 col-md-6 col-lg-4 card text-center bg-light card-body justify-content-center">
+        <div class="ProyectosArq col-sm-12 col-md-6 col-lg-4 card text-center bg-light card-body justify-content-center gs_reveal gs_reveal_fromLeft">
             <h3>Proyectos de Arquitectura</h3>
             <p>Diseñamos el proyecto de tu casa soñada.</p>
         </div>
@@ -70,33 +70,52 @@
 
     <section class="container">
         <h2>Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga iure delectus tempora dolores repellendus assumenda? Repudiandae necessitatibus vel consequuntur ab dolore neque consectetur maiores saepe! Alias earum fuga sequi?</p>
+        <p>Te mostramos algunos de nuestros trabajos. Realizamos tanto Proyectos de Arquitectura como Renders.</p>
         <section class="row">
             <div class="col-md-6 col-lg-4 col-sm-12 marginImg image">
               <img class="image__img" src="./Assets/Casa F-min.jpg" alt="Casa F">
               <div class="image__overlay">
                 <h4 class="image__title">Casa F</h4>
-                <p class="image__description">Aca va la descripcion</div>
+                <p class="image__description">Proyecto de Arquitectura</div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-8 col-sm-12">
-                <img src="./Assets/CASA A08-min.jpg" alt="Casa A08">   
+            <div class="col-md-6 col-lg-8 col-sm-12 marginImg image">
+              <img class="image__img1" src="./Assets/CASA A08-min.jpg" alt="Casa A08">
+              <div class="image__overlay1">
+                <h4 class="image__title">Casa F</h4>
+                <p class="image__description">Renders</div>
+              </div>
             </div>
         </section>
         <section class="row rowPadding">
-            <div class="col-md-6 col-lg-8 col-sm-12 marginImg">
-                <img src="./Assets/Casa MG-min.jpg" alt="Casa MG">
+          <div class="col-md-6 col-lg-8 col-sm-12 marginImg image">
+            <img class="image__img1" src="./Assets/CASA MG-min.jpg" alt="Casa MG">
+            <div class="image__overlay1">
+              <h4 class="image__title">Casa MG</h4>
+              <p class="image__description">Proyecto de Arquitectura</div>
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12">
-                <img src="./Assets/Casa Miralagos-min.jpg" alt="Casa Miralagos">
+          </div>
+          <div class="col-md-6 col-lg-4 col-sm-12 marginImg image">
+            <img class="image__img" src="./Assets/Casa Miralagos-min.jpg" alt="Casa Miralagos">
+            <div class="image__overlay">
+              <h4 class="image__title">Casa Miralagos</h4>
+              <p class="image__description">Proyecto de Arquitectura</div>
             </div>
+          </div>
         </section>
         <section class="row rowPadding">
-            <div class="col-md-6 col-lg-4 col-sm-12 marginImg">
-                <img src="./Assets/jardin -min.jpg" alt="Jardin">
+          <div class="col-md-6 col-lg-4 col-sm-12 marginImg image">
+            <img class="image__img" src="./Assets/jardin -min.jpg" alt="Casa Jardin">
+            <div class="image__overlay">
+              <h4 class="image__title">Casa Jardin</h4>
+              <p class="image__description">Renders</div>
             </div>
-            <div class="col-md-6 col-lg-8 col-sm-12">
-                <img src="./Assets/Casa Paul Harris-min.jpg" alt="Casa Paul Harris">
+          </div>
+          <div class="col-md-6 col-lg-8 col-sm-12 marginImg image">
+            <img class="image__img1" src="./Assets/Casa Paul Harris-min.jpg" alt="Casa Paul Harris">
+            <div class="image__overlay1">
+              <h4 class="image__title">Casa Paul Harris</h4>
+              <p class="image__description">Proyecto de Arquitectura</div>
             </div>
             <a href="pages/Portfolio.html" class="btn btn-secondary" role="button">Ver más</a>
         </section>
@@ -161,7 +180,49 @@
           </div>
       </div>
     </section>
-    
+        <script>
+            function animateFrom(elem, direction) {
+              direction = direction || 1;
+              var x = 0,
+                  y = direction * 100;
+              if(elem.classList.contains("gs_reveal_fromLeft")) {
+                x = -100;
+                y = 0;
+              } else if (elem.classList.contains("gs_reveal_fromRight")) {
+                x = 100;
+                y = 0;
+              }
+              elem.style.transform = "translate(" + x + "px, " + y + "px)";
+              elem.style.opacity = "0";
+              gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+                duration: 1.25, 
+                x: 0,
+                y: 0, 
+                autoAlpha: 1, 
+                ease: "expo", 
+                overwrite: "auto"
+              });
+            }
+
+    function hide(elem) {
+      gsap.set(elem, {autoAlpha: 0});
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      gsap.registerPlugin(ScrollTrigger);
+      
+      gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+        hide(elem); // assure that the element is hidden when scrolled into view
+        
+        ScrollTrigger.create({
+          trigger: elem,
+          onEnter: function() { animateFrom(elem) }, 
+          onEnterBack: function() { animateFrom(elem, -1) },
+          onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+        });
+      });
+    });
+    </script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
