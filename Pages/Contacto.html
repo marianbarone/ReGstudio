@@ -53,61 +53,127 @@
         </nav>
     </header>
 
-    <section class="Contacto">
-        <h2>Contacto</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-8 col-sm-12">
-                <form action="#">
-                    <label for="Nombre">Nombre: <input type="text" name="Nombre"></label> <br>
-                    <label for="Apellido">Apellido: <input type="text" name="Apellido"></label> <br>
-                    <div>
-                        Pais
-                        <select name="Pais" id="">
-                            <option value="Argentina">Argentina</option>
-                            <option value="España">España</option>
-                            <option value="Portugal">Portugal</option>
-                        </select>
-                    </div>
-                    <div>
-                        ¿Qué servicio necesitás?
-                        <br>
-                        <span>Proyecto de Arquitectura</span>
-                        <input type="checkbox" name="Servicio" value="Proyecto de Arquitectura">
-                        <br>
-                        <span>Render</span>
-                        <input type="checkbox" name="Servicio2" value="Render">
-                    </div>
-                    <div>
-                        Comentarios
-                        <br>
-                        <textarea name="Comentarios" id="" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
-                    </div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar Formulario">
-                </form>
+    <section class="row Contacto">
+        <div class="col-md-6 col-lg-8 col-sm-12 gs_reveal gs_reveal_fromLeft">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label for="Nombre">Nombre: <input type="text" name="Nombre"></label> <br>
+                <label for="Apellido">Apellido: <input type="text" name="Apellido"></label> <br>
+                <div>
+                    Pais
+                    <select name="Pais" id="">
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                    </select>
+                </div>
+                <div>
+                    ¿Qué servicio necesitás?
+                    <br>
+                    <span>Proyecto de Arquitectura</span>
+                    <input type="checkbox" name="Servicio" value="Proyecto de Arquitectura">
+                    <br>
+                    <span>Render</span>
+                    <input type="checkbox" name="Servicio2" value="Render">
+                </div>
+                <div>
+                    Comentarios
+                    <br>
+                    <textarea name="Comentarios" id="" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                </div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar Formulario">
+            </form>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-12 DatosDeContacto gs_reveal gs_reveal_fromRight">
+            <h2>Datos de Contacto</h2>
+            <span></span>
+            <li class="liContacto">Dirección: Rincón de Milberg, Provincia de Buenos Aires.</li>
+            <li class="liContacto">Email: info@regstudio.com.ar</li>
+            <li class="liContacto">Teléfono: +54 9 11 68725566</li>
+        </div>
+    </section>
+    <section class="map gs_reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52666.122653503866!2d-58.668474672856945!3d-34.41068149848668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca41d589d6487%3A0x9efd06924549bdb5!2sRinc%C3%B3n%20de%20Milberg%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1617921031694!5m2!1sen!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-4 col-sm-12 align-self-center gs_reveal">
+                <img src="../Assets/Reg Logo.png" alt="ReG Logo">
+                </div>
+                <div class="col-lg-4 col-sm-6 align-self-center text-center gs_reveal">
+                <h6>MENÚ</h6>
+                <a href="">Inicio</a> </br>
+                <a href="">Servicios</a> </br>
+                <a href="">Portfolio</a> </br>
+                <a href="">Nosotros</a> </br>
+                <a href="">Contacto</a> </br>
+                </div>
+                <div class="col-lg-4 col-sm-6 align-self-center text-center gs_reveal">
+                <h6>CONTACTO</h6>
+                <a>Rincón de Milberg,</a> </br>
+                <a>Provincia de Buenos Aires</a> </br>
+                <a href="mailto:info@regstudio.com.ar">info@regstudio.com.ar</a> </br>
+                <a href="">+54 9 11 68725566</a> </br>
+                </div>	
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12 DatosDeContacto">
-                <h2>Datos de Contacto</h2>
-                <span></span>
-                <h4>Lorem</h4>
-                <h4>Ipsum</h4>
-                <h4>Dolor</h4>
-                <h4>Sit</h4>
-                <h4>Amet</h4>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                    <p>Copyright © Mariano Barone</p>
             </div>
         </div>
     </section>
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52666.122653503866!2d-58.668474672856945!3d-34.41068149848668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca41d589d6487%3A0x9efd06924549bdb5!2sRinc%C3%B3n%20de%20Milberg%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1617921031694!5m2!1sen!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    <footer>
-        <p>footer</p>
-    </footer>
-
-    <script src="js/wow.min.js"></script>
     <script>
-    new WOW().init();
-    </script>
+        function animateFrom(elem, direction) {
+            direction = direction || 1;
+            var x = 0,
+                y = direction * 100;
+            if(elem.classList.contains("gs_reveal_fromLeft")) {
+            x = -100;
+            y = 0;
+            } else if (elem.classList.contains("gs_reveal_fromRight")) {
+            x = 100;
+            y = 0;
+            }
+            elem.style.transform = "translate(" + x + "px, " + y + "px)";
+            elem.style.opacity = "0";
+            gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+            duration: 1.25, 
+            x: 0,
+            y: 0, 
+            autoAlpha: 1, 
+            ease: "expo", 
+            overwrite: "auto"
+            });
+        }
+    
+        function hide(elem) {
+            gsap.set(elem, {autoAlpha: 0});
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            
+            gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+            hide(elem); // assure that the element is hidden when scrolled into view
+            
+            ScrollTrigger.create({
+                trigger: elem,
+                onEnter: function() { animateFrom(elem) }, 
+                onEnterBack: function() { animateFrom(elem, -1) },
+                onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+            });
+            });
+        });
+        </script>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

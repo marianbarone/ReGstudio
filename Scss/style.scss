@@ -17,7 +17,7 @@ section {
     background-image: url('../Assets/Casa\ MT\ Fondo-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 480px;
     background-position-y: -120px;
 }
 
@@ -290,6 +290,7 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .serviciosContainer h2 {
@@ -388,6 +389,9 @@ img {
     border: 0;
 }
 
+.liContacto {
+    margin-left: 40px;
+}
 .Contacto {
     background-color: $principal;
     color: $blanco;
@@ -424,7 +428,7 @@ img {
 
     .thumbnail {
         height: 100px;
-        width: 200px;
+        width: 100%;
         padding: 20px;
 
         img {
@@ -462,9 +466,9 @@ img {
 }
 
 .gs_reveal {
-    opacity: 0;
-    visibility: hidden;
-    will-change: transform, opacity;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
 }
 
 

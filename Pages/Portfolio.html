@@ -53,11 +53,11 @@
         </nav>
     </header>
     <section class="container" style="margin-top: 40px;">
-        <h2>Portfolio</h2>
-        <p class="marginBottom">Filtra lo que buscás</p>
-        <span class="Filtro">Proyectos</span>
-        <span class="Filtro">Renders</span>
-        <section class="row marginTop">
+        <h2 class="gs_reveal">Portfolio</h2>
+        <p class="marginBottom gs_reveal">Filtrá por lo que buscás</p>
+        <span class="Filtro gs_reveal">Proyectos</span>
+        <span class="Filtro gs_reveal">Renders</span>
+        <section class="row marginTop gs_reveal">
             <div class="col-md-6 col-lg-4 col-sm-12 marginImg image">
               <img class="image__img" src="./Assets/Casa F-min.jpg" alt="Casa F">
               <div class="image__overlay">
@@ -73,7 +73,7 @@
               </div>
             </div>
         </section>
-        <section class="row rowPadding">
+        <section class="row rowPadding gs_reveal">
           <div class="col-md-6 col-lg-8 col-sm-12 marginImg image">
             <img class="image__img1" src="./Assets/CASA MG-min.jpg" alt="Casa MG">
             <div class="image__overlay1">
@@ -89,7 +89,7 @@
             </div>
           </div>
         </section>
-        <section class="row rowPadding">
+        <section class="row rowPadding gs_reveal">
           <div class="col-md-6 col-lg-4 col-sm-12 marginImg image">
             <img class="image__img" src="./Assets/jardin -min.jpg" alt="Casa Jardin">
             <div class="image__overlay">
@@ -105,14 +105,84 @@
             </div>
         </section>
     </section>
-    <footer>
-        <p>footer</p>
-    </footer>
-
-    <script src="js/wow.min.js"></script>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-4 col-sm-12 align-self-center gs_reveal">
+                <img src="../Assets/Reg Logo.png" alt="ReG Logo">
+                </div>
+                <div class="col-lg-4 col-sm-6 align-self-center text-center gs_reveal">
+                <h6>MENÚ</h6>
+                <a href="">Inicio</a> </br>
+                <a href="">Servicios</a> </br>
+                <a href="">Portfolio</a> </br>
+                <a href="">Nosotros</a> </br>
+                <a href="">Contacto</a> </br>
+                </div>
+                <div class="col-lg-4 col-sm-6 align-self-center text-center gs_reveal">
+                <h6>CONTACTO</h6>
+                <a>Rincón de Milberg,</a> </br>
+                <a>Provincia de Buenos Aires</a> </br>
+                <a href="mailto:info@regstudio.com.ar">info@regstudio.com.ar</a> </br>
+                <a href="">+54 9 11 68725566</a> </br>
+                </div>	
+            </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                    <p>Copyright © Mariano Barone</p>
+            </div>
+        </div>
+    </section>
     <script>
-    new WOW().init();
-    </script>
+        function animateFrom(elem, direction) {
+            direction = direction || 1;
+            var x = 0,
+                y = direction * 100;
+            if(elem.classList.contains("gs_reveal_fromLeft")) {
+            x = -100;
+            y = 0;
+            } else if (elem.classList.contains("gs_reveal_fromRight")) {
+            x = 100;
+            y = 0;
+            }
+            elem.style.transform = "translate(" + x + "px, " + y + "px)";
+            elem.style.opacity = "0";
+            gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+            duration: 1.25, 
+            x: 0,
+            y: 0, 
+            autoAlpha: 1, 
+            ease: "expo", 
+            overwrite: "auto"
+            });
+        }
+    
+        function hide(elem) {
+            gsap.set(elem, {autoAlpha: 0});
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.registerPlugin(ScrollTrigger);
+            
+            gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+            hide(elem); // assure that the element is hidden when scrolled into view
+            
+            ScrollTrigger.create({
+                trigger: elem,
+                onEnter: function() { animateFrom(elem) }, 
+                onEnterBack: function() { animateFrom(elem, -1) },
+                onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+            });
+            });
+        });
+        </script>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
