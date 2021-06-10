@@ -377,6 +377,7 @@ img {
     padding: 30px; }
   .bg-image {
     background-size: cover;
+    padding: 0px;
     height: 500px;
     background-position-x: -320px; }
   .marginMobile {
@@ -423,9 +424,9 @@ img {
   .client .thumbnail {
     height: 100px;
     width: 100%;
-    padding: 20px; }
+    padding: 25px; }
     .client .thumbnail img {
-      max-width: 50px;
+      width: 40px;
       height: 100%;
       object-fit: fill;
       object-position: center; }
@@ -463,9 +464,8 @@ img {
   .bg-image {
     background-size: cover;
     background-position-y: -60px;
-    background-position-x: -450px;
-    height: 800px;
-    padding: 300px; }
+    background-position-x: 0px;
+    height: 800px; }
   .bg-image2 {
     background-size: cover;
     background-position-y: 20px;
