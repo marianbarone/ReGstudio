@@ -378,21 +378,102 @@ img {
   .bg-image {
     background-size: cover;
     height: 500px;
-    background-position-x: -320px; } }
+    background-position-x: -320px; }
+  .marginMobile {
+    margin-top: 20px; }
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    width: 315.33px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    color: #f9f9f9;
+    align-items: left;
+    opacity: 1; }
+  .image__overlay1 {
+    position: absolute;
+    top: 0;
+    width: 315.33px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    color: #f9f9f9;
+    align-items: left;
+    opacity: 1; }
+  .card-deck {
+    height: fit-content; }
+  .card-deck .card {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #f9f9f9; }
+  .serviciosContainer {
+    background-color: #f9f9f9;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 0; }
+  .client {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .client .thumbnail {
+    height: 100px;
+    width: 100%;
+    padding: 20px; }
+    .client .thumbnail img {
+      max-width: 50px;
+      height: 100%;
+      object-fit: fill;
+      object-position: center; }
+  .bg-image3 {
+    background-image: url("../Assets/Casa RM - min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position-x: -200px;
+    background-position-y: -10px; }
+  .DatosDeContacto {
+    border-color: #f9f9f9;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-top: 20px;
+    text-align: center; }
+  .Comentarios {
+    width: 265.33px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1239px) {
   .marginImg {
     margin-top: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .bg-image3 {
+    background-image: url("../Assets/Casa RM - min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position-x: -0px;
+    background-position-y: -10px; } }
 
 @media only screen and (min-width: 768px) {
   .rowPadding {
     padding-top: 30px; }
   .bg-image {
+    background-size: cover;
     background-position-y: -60px;
+    background-position-x: -450px;
     height: 800px;
     padding: 300px; }
+  .bg-image2 {
+    background-size: cover;
+    background-position-y: 20px;
+    background-position-x: -50px;
+    height: 550px; }
   .ProyectosArq {
     margin-bottom: 20px; }
   .Renders {
-    margin-top: -150px; } }
+    margin-top: -150px; }
+  .marginMobile {
+    margin-top: 20px; } }
