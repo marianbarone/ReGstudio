@@ -11,6 +11,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+    background-position:center;
 }
 
 .bg-image2 {
@@ -390,7 +391,7 @@ img {
 }
 
 .liContacto {
-    margin-left: 40px;
+    margin-left: 0px;
 }
 .Contacto {
     background-color: $principal;
@@ -483,11 +484,15 @@ img {
         background-size:cover;
         padding: 0px;
         height: 500px;
-        background-position-x: -320px;
+        background-position: center;
     }
 
     .marginMobile {
         margin-top: 20px;
+    }
+
+    .Renders {
+        margin-top:20px; 
     }
 
     .image__overlay {
@@ -530,10 +535,15 @@ img {
         background-color: $blanco;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 0px;
+        padding-top: 40px;
         padding-bottom: 40px;
         margin-bottom: 40px;
         margin-top: 0;
+
+        .card-text {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 
     .client {
@@ -559,6 +569,13 @@ img {
         }
     }
 
+    .bg-image2 {
+        background-size:cover;
+        background-position-y: 20px;
+        background-position-x: -300px;
+        height: 550px;
+    }
+
     .bg-image3 {
         background-image: url('../Assets/Casa\ RM\ -\ min.jpg');
         background-repeat: no-repeat;
@@ -569,11 +586,12 @@ img {
     }
 
     .DatosDeContacto {
-        border-color: $blanco;
-        border-radius: 5px;
-        border-width: 2px;
         margin-top: 20px;
-        text-align: center;
+        text-align: left;
+    }
+
+    .liContacto {
+        margin-left: 0;
     }
 
     .Comentarios {
@@ -607,14 +625,12 @@ img {
     .bg-image {
         background-size:cover;
         background-position-y: -60px;
-        background-position-x: 0px;
         height: 800px;
     }
 
     .bg-image2 {
         background-size:cover;
         background-position-y: 20px;
-        background-position-x: -50px;
         height: 550px;
     }
 

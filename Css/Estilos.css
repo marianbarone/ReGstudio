@@ -6,7 +6,8 @@ section {
   background-image: url("../Assets/Header-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px; }
+  height: 500px;
+  background-position: center; }
 
 .bg-image2 {
   background-image: url("../Assets/Casa MT Fondo-min.jpg");
@@ -310,7 +311,7 @@ img {
   border: 0; }
 
 .liContacto {
-  margin-left: 40px; }
+  margin-left: 0px; }
 
 .Contacto {
   background-color: #3D3D3D;
@@ -379,8 +380,10 @@ img {
     background-size: cover;
     padding: 0px;
     height: 500px;
-    background-position-x: -320px; }
+    background-position: center; }
   .marginMobile {
+    margin-top: 20px; }
+  .Renders {
     margin-top: 20px; }
   .image__overlay {
     position: absolute;
@@ -412,10 +415,13 @@ img {
     background-color: #f9f9f9;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: 40px;
     padding-bottom: 40px;
     margin-bottom: 40px;
     margin-top: 0; }
+    .serviciosContainer .card-text {
+      padding-left: 15px;
+      padding-right: 15px; }
   .client {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -430,6 +436,11 @@ img {
       height: 100%;
       object-fit: fill;
       object-position: center; }
+  .bg-image2 {
+    background-size: cover;
+    background-position-y: 20px;
+    background-position-x: -300px;
+    height: 550px; }
   .bg-image3 {
     background-image: url("../Assets/Casa RM - min.jpg");
     background-repeat: no-repeat;
@@ -438,11 +449,10 @@ img {
     background-position-x: -200px;
     background-position-y: -10px; }
   .DatosDeContacto {
-    border-color: #f9f9f9;
-    border-radius: 5px;
-    border-width: 2px;
     margin-top: 20px;
-    text-align: center; }
+    text-align: left; }
+  .liContacto {
+    margin-left: 0; }
   .Comentarios {
     width: 265.33px; } }
 
@@ -464,12 +474,10 @@ img {
   .bg-image {
     background-size: cover;
     background-position-y: -60px;
-    background-position-x: 0px;
     height: 800px; }
   .bg-image2 {
     background-size: cover;
     background-position-y: 20px;
-    background-position-x: -50px;
     height: 550px; }
   .ProyectosArq {
     margin-bottom: 20px; }
