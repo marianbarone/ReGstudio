@@ -223,26 +223,6 @@ img {
   bottom: 20px;
 }
 
-.Filtro {
-  background-color: #3D3D3D;
-  border: 1px solid round #3D3D3D;
-  color: #f9f9f9;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 30px 5px 100px 15px;
-}
-
-.Filtro:hover {
-  background-color: #f9f9f9;
-  border: 1px solid round #f9f9f9;
-  color: #3D3D3D;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 30px 5px 100px 15px;
-}
-
 .marginTop {
   margin-top: 30px;
 }
@@ -328,20 +308,20 @@ img {
 }
 
 .Contacto {
-  background-color: #3D3D3D;
-  color: #f9f9f9;
+  background-color: #f9f9f9;
+  color: #3D3D3D;
   margin-top: 60px;
   padding: 40px;
 }
 
 .DatosDeContacto {
-  border-color: #f9f9f9;
+  border-color: #3D3D3D;
   border-radius: 5px;
   border-width: 2px;
 }
 
 .Contacto h2 {
-  color: #f9f9f9;
+  color: #3D3D3D;
 }
 
 .Contacto h4 {

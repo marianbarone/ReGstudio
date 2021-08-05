@@ -16,7 +16,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Css/Estilos.css">
+    <link rel="stylesheet" href="./scss/style.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -57,12 +57,12 @@
     </section>
 
     <section class="row card-deck-servicios justify-content-md-center">
-        <div class="ProyectosArq col-sm-12 col-md-12 col-lg-4 card text-center bg-light card-body justify-content-center gs_reveal gs_reveal_fromLeft">
+        <div class="ProyectosArq col-sm-12 col-md-12 col-lg-4 card text-center bg-light card-body justify-content-center gs_reveal gs_reveal_fromLeft" style="cursor: pointer;" onclick="window.location='Pages/Proyectos.html';">
             <h3>Proyectos de Arquitectura</h3>
             <p>Diseñamos el proyecto de tu casa soñada.</p>
         </div>
 
-        <div class="Renders col-sm-12 col-md-12 col-lg-4 card bg-light card-body justify-content-center text-center gs_reveal gs_reveal_fromRight">
+        <div class="Renders col-sm-12 col-md-12 col-lg-4 card bg-light card-body justify-content-center text-center gs_reveal gs_reveal_fromRight" style="cursor: pointer;" onclick="window.location='Pages/Renders.html';">
             <h3>Renders</h3>
             <p>¿Necesitás renders? Te ayudamos a presentar tu proyecto.</p>
         </div>
@@ -123,34 +123,6 @@
     <section class="row Contacto" id="Contacto">
       <div class="col-md-6 col-lg-8 col-sm-12 gs_reveal gs_reveal_fromLeft">
           <h2>Contacto</h2>
-          <form action="#">
-              <label for="Nombre">Nombre: <input type="text" name="Nombre"></label> <br>
-              <label for="Apellido">Apellido: <input type="text" name="Apellido"></label> <br>
-              <div>
-                  Pais
-                  <select name="Pais" id="">
-                      <option value="Argentina">Argentina</option>
-                      <option value="España">España</option>
-                      <option value="Portugal">Portugal</option>
-                  </select>
-              </div>
-              <div>
-                  ¿Qué servicio necesitás?
-                  <br>
-                  <span>Proyecto de Arquitectura</span>
-                  <input type="checkbox" name="Servicio" value="Proyecto de Arquitectura">
-                  <br>
-                  <span>Render</span>
-                  <input type="checkbox" name="Servicio2" value="Render">
-              </div>
-              <div>
-                  Comentarios
-                  <br>
-                  <textarea name="Comentarios" id="Comentarios" class="Comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
-              </div>
-              <input type="submit" value="Enviar">
-              <input type="reset" value="Limpiar Formulario">
-          </form>
       </div>
       <div class="col-md-6 col-lg-4 col-sm-12 DatosDeContacto gs_reveal gs_reveal_fromRight">
           <h2>Datos de Contacto</h2>

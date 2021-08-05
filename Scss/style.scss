@@ -241,26 +241,6 @@ img {
     bottom: 20px;
 }
 
-.Filtro {
-    background-color: $principal;
-    border: 1px solid round $principal;
-    color:$blanco;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    margin: 30px 5px 100px 15px;
-}
-
-.Filtro:hover {
-    background-color: $blanco;
-    border: 1px solid round $blanco;
-    color:$principal;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    margin: 30px 5px 100px 15px;
-}
-
 .marginTop {
     margin-top: 30px;
 }
@@ -344,21 +324,22 @@ img {
 .liContacto {
     margin-left: 0px;
 }
+
 .Contacto {
-    background-color: $principal;
-    color: $blanco;
+    background-color: $blanco;
+    color: $principal;
     margin-top: 60px;
     padding: 40px;
 }
 
 .DatosDeContacto {
-    border-color: $blanco;
+    border-color: $principal;
     border-radius: 5px;
     border-width: 2px;
 }
 
 .Contacto h2 {
-    color: $blanco;
+    color: $principal;
 }
 
 .Contacto h4 {

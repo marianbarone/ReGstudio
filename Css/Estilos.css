@@ -203,23 +203,6 @@ img {
   position: absolute;
   bottom: 20px; }
 
-.Filtro {
-  background-color: #3D3D3D;
-  border: 1px solid round #3D3D3D;
-  color: #f9f9f9;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 30px 5px 100px 15px; }
-
-.Filtro:hover {
-  background-color: #f9f9f9;
-  border: 1px solid round #f9f9f9;
-  color: #3D3D3D;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  margin: 30px 5px 100px 15px; }
 
 .marginTop {
   margin-top: 30px; }
@@ -283,27 +266,6 @@ img {
 .card-deck .card:hover .card-text {
   color: #3D3D3D; }
 
-#why-choose-us h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 70px;
-  text-align: left;
-  font-size: 45px; }
-
-#why-choose-us .service-row > div {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 40px; }
-
-#why-choose-us .service-row {
-  margin-right: 0px; }
-  #why-choose-us .service-row h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    line-height: 1.4em;
-    text-align: left; }
-  #why-choose-us .service-row p {
-    font-size: 15px; }
 
 .map {
   width: 100%;
