@@ -14,21 +14,6 @@ section {
     background-position:center;
 }
 
-.bg-image2 {
-    background-image: url('../Assets/Casa\ MT\ Fondo-min.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 480px;
-    background-position-y: -120px;
-}
-
-.bg-image3 {
-    background-image: url('../Assets/Casa\ RM\ -\ min.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 600px;
-    background-position-y: -200px;
-}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -150,9 +135,9 @@ img {
     height: 300px;
 }
 
-
 .row {
     &.SeccionOscura{
+        
         .card {
             width: 18rem;
             background-color: #3D3D3D;
@@ -348,40 +333,6 @@ img {
 
 .card-deck .card:hover .card-text {
     color: $principal;
-}
-
-#why-choose-us {
-    
-    h2 {
-        margin-top:40px;
-        margin-bottom:40px;
-        margin-left: 70px;
-        text-align:left;
-        font-size:45px;
-    }
-
-    .service-row > div {
-        padding-left:70px;
-        padding-right: 70px;
-        padding-bottom:40px;
-    }
-    
-    .service-row {
-
-        margin-right: 0px;
-        
-        h4 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            line-height: 1.4em;
-            text-align:left;
-        }
-
-        p {
-            font-size:15px;
-        }
-
-    }
 }
 
 .map {

@@ -1,0 +1,569 @@
+section {
+  margin: 0px;
+  width: 100%;
+}
+
+.bg-image {
+  background-image: url("../Assets/Header-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: #3D3D3D;
+}
+
+.row {
+  margin-left: 0;
+}
+
+.container h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+}
+
+#Nosotros h2 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.SeccionOscura {
+  background-color: #3D3D3D;
+  color: #FFFFFF;
+  padding: 40px;
+}
+
+.SeccionOscura p {
+  text-align: justify;
+}
+
+.btn-secondary {
+  background-color: #3D3D3D;
+  color: #f9f9f9;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.CargarMas {
+  text-decoration: none;
+  text-align: center;
+}
+
+.TextoBlanco {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #3D3D3D;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  font-size: 100px;
+}
+
+h3 {
+  font-weight: bolder;
+}
+
+.ProyectosArq {
+  background-color: #f9f9f9;
+  height: 250px;
+  margin: 1px;
+  text-transform: uppercase;
+  margin-top: -150px;
+  margin-bottom: 20px;
+}
+
+.Renders {
+  background-color: #f9f9f9;
+  height: 250px;
+  margin: 1px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.ProyectosArq:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Assets/Casa MT Frente-min.jpg");
+  width: 100%;
+  height: 250px;
+  color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+
+.Renders:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Assets/Casa RM - min.jpg");
+  width: 100%;
+  height: 250px;
+  color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.row.SeccionOscura .card {
+  width: 18rem;
+  background-color: #3D3D3D;
+  border-style: none;
+  padding: 20px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.row.SeccionOscura .card-img-top {
+  width: 18rem;
+}
+
+.imgSocios {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
+.nosotrosTexto {
+  padding-top: 15px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  width: 340px;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  color: #f9f9f9;
+  align-items: left;
+  opacity: 0;
+}
+
+.image__overlay1 {
+  position: absolute;
+  top: 0;
+  width: 709.99px;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  color: #f9f9f9;
+  align-items: left;
+  opacity: 0;
+}
+
+.image__overlay1:hover {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.image__overlay1 > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay1:hover > * {
+  transform: translateY(0);
+}
+
+.image__overlay:hover {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 60px;
+  margin-left: 15px;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  position: absolute;
+  bottom: 20px;
+}
+
+.Filtro {
+  background-color: #3D3D3D;
+  border: 1px solid round #3D3D3D;
+  color: #f9f9f9;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 30px 5px 100px 15px;
+}
+
+.Filtro:hover {
+  background-color: #f9f9f9;
+  border: 1px solid round #f9f9f9;
+  color: #3D3D3D;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 30px 5px 100px 15px;
+}
+
+.marginTop {
+  margin-top: 30px;
+}
+
+.marginBottom {
+  margin-bottom: 30px;
+}
+
+.serviciosContainer {
+  background-color: #f9f9f9;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.serviciosContainer h2 {
+  color: #3D3D3D;
+}
+
+.card-deck .card {
+  padding: 32px 32px 0;
+  margin: 16px;
+  border-radius: 0;
+  border: 0;
+  background-color: #f9f9f9;
+}
+
+.card-deck .card:hover {
+  box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+  background-color: #f9f9f9;
+}
+
+.card-deck .card:hover .card-title {
+  color: #3D3D3D;
+}
+
+.card-deck .card .card-body {
+  padding: 0;
+}
+
+.card-deck .card .card-img-top {
+  margin-bottom: 24px;
+  border-radius: 0px;
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  align-self: center;
+}
+
+.card-deck .card .card-title {
+  color: #3D3D3D;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card-deck .card .card-text {
+  color: #3D3D3D;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card-deck .card:hover .card-text {
+  color: #3D3D3D;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+.liContacto {
+  margin-left: 0px;
+}
+
+.Contacto {
+  background-color: #3D3D3D;
+  color: #f9f9f9;
+  margin-top: 60px;
+  padding: 40px;
+}
+
+.DatosDeContacto {
+  border-color: #f9f9f9;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.Contacto h2 {
+  color: #f9f9f9;
+}
+
+.Contacto h4 {
+  text-align: left;
+}
+
+.client {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-right: 70px;
+}
+
+.client .thumbnail:hover {
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-transform: scale(1.1);
+}
+
+.client .thumbnail {
+  height: 100px;
+  width: 100%;
+  padding: 30px;
+}
+.client .thumbnail img {
+  max-width: 187.5px;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#footer .container-fluid .col-sm-6 a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3D3D3D;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+#footer .container-fluid .col-sm-6 a:hover {
+  color: #000000;
+}
+
+#footer img {
+  height: 200px;
+  size: 200px;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+@media only screen and (max-width: 768px) {
+  .marginImg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-deck-servicios {
+    padding: 30px;
+  }
+
+  .bg-image {
+    background-size: cover;
+    padding: 0px;
+    height: 500px;
+    background-position: center;
+  }
+
+  .marginMobile {
+    margin-top: 20px;
+  }
+
+  .Renders {
+    margin-top: 20px;
+  }
+
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    width: 315.33px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    color: #f9f9f9;
+    align-items: left;
+    opacity: 1;
+  }
+
+  .image__overlay1 {
+    position: absolute;
+    top: 0;
+    width: 315.33px;
+    height: 300px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    color: #f9f9f9;
+    align-items: left;
+    opacity: 1;
+  }
+
+  .card-deck {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .card-deck .card {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #f9f9f9;
+  }
+
+  .serviciosContainer {
+    background-color: #f9f9f9;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .serviciosContainer .card-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .client {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .client .thumbnail {
+    height: 100px;
+    width: 100%;
+    padding: 25px;
+  }
+  .client .thumbnail img {
+    width: 40px;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    -o-object-position: center;
+       object-position: center;
+  }
+
+  .bg-image2 {
+    background-size: cover;
+    background-position-y: 20px;
+    background-position-x: -300px;
+    height: 550px;
+  }
+
+  .bg-image3 {
+    background-image: url("../Assets/Casa RM - min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position-x: -200px;
+    background-position-y: -10px;
+  }
+
+  .DatosDeContacto {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .liContacto {
+    margin-left: 0;
+  }
+
+  .Comentarios {
+    width: 265.33px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1239px) {
+  .marginImg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bg-image3 {
+    background-image: url("../Assets/Casa RM - min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position-x: 0px;
+    background-position-y: -10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rowPadding {
+    padding-top: 30px;
+  }
+
+  .bg-image {
+    background-size: cover;
+    background-position-y: -60px;
+    height: 800px;
+  }
+
+  .bg-image2 {
+    background-size: cover;
+    background-position-y: 20px;
+    height: 550px;
+  }
+
+  .ProyectosArq {
+    margin-bottom: 20px;
+  }
+
+  .Renders {
+    margin-top: -150px;
+  }
+
+  .marginMobile {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
