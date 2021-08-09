@@ -58,12 +58,12 @@
     </section>
 
     <section class="row card-deck-servicios justify-content-md-center">
-        <div class="ProyectosArq col-sm-12 col-md-12 col-lg-4 card text-center bg-light card-body justify-content-center gs_reveal gs_reveal_fromLeft" style="cursor: pointer;" onclick="window.location='Pages/Proyectos.html';">
+        <div class="ProyectosArq col-sm-12 col-md-12 col-lg-4 card text-center bg-light card-body justify-content-center" style="cursor: pointer;" onclick="window.location='Pages/Proyectos.html';">
             <h3>Proyectos de Arquitectura</h3>
             <p>Diseñamos el proyecto de tu casa soñada.</p>
         </div>
 
-        <div class="Renders col-sm-12 col-md-12 col-lg-4 card bg-light card-body justify-content-center text-center gs_reveal gs_reveal_fromRight" style="cursor: pointer;" onclick="window.location='Pages/Renders.html';">
+        <div class="Renders col-sm-12 col-md-12 col-lg-4 card bg-light card-body justify-content-center text-center" style="cursor: pointer;" onclick="window.location='Pages/Renders.html';">
             <h3>Renders</h3>
             <p>¿Necesitás renders? Te ayudamos a presentar tu proyecto.</p>
         </div>
@@ -120,29 +120,30 @@
             </div>
         </section>
     </section>
-    <section class="map gs_reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.081480026855!2d-58.65567968425394!3d-34.399274854217396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca3e513bd265d%3A0x9a3d6f027c33ad4!2sNordelta%20Centro%20Comercial!5e0!3m2!1ses-419!2sar!4v1628172086176!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="contact-form gs_reveal gs_reveal_fromRight">
+    <section class="row gs_reveal">
+
+        <div class="contact-form col-sm-12 gs_reveal gs_reveal_fromRight">
           <ul class="contact-list">
             <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Nordelta</span></i></li>
-            
             <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+54-911-68725566" title="Llamanos">+54 9 11 68725566</a></span></i></li>
-            
-            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:info@regstudio.com.ar">info@regstudio.com.ar</a></span></i></li>
-            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:info@regstudio.com.ar" target="_blank">info@regstudio.com.ar</a></span></i></li>
           </ul>
 
           <ul class="social-media-list">
-            <li><a href="https://www.instagram.com/reg.studio/" class="contact-icon">
+            <li><a href="https://www.instagram.com/reg.studio/" target="_blank" class="contact-icon">
               <i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
             <li><a href="https://www.linkedin.com/company/reg-studio" target="_blank" class="contact-icon">
               <i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </li>
             <li><a href="https://kuula.co/profile/regstudio" target="_blank" class="contact-icon">
-              <i class="fab fa-korvue" aria-hidden="true"></i></a>
+              <i class="fab fa-korvue" aria-hidden="false"></i></a>
             </li> 
           </ul>
+        
+      </div>
+      <div class="map col-sm-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.081480026855!2d-58.65567968425394!3d-34.399274854217396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca3e513bd265d%3A0x9a3d6f027c33ad4!2sNordelta%20Centro%20Comercial!5e0!3m2!1ses-419!2sar!4v1628172086176!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
 
@@ -223,7 +224,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
