@@ -371,8 +371,52 @@ img {
   height: 600px;
 }
 
+#caroulselChico {
+  height: 400px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.carousel-inner1 {
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.carousel-img1 {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .carousel-img {
   height: 600px;
+}
+
+#info {
+  background-color: #3D3D3D;
+  color: #f9f9f9;
+  padding: 25px;
+}
+
+.imgAlta {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.imgAncha {
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 15px;
+}
+
+#dobleImagen {
+  background-color: #f9f9f9;
+  padding: 25px;
 }
 
 /* Social Media Icons */

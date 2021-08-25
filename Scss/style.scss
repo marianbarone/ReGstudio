@@ -390,8 +390,50 @@ img {
     height: 600px;
 }
 
+#caroulselChico {
+    height: 400px;
+    padding: 30px;
+    background-color: $blanco;
+}
+
+.carousel-inner1 {
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.carousel-img1 {
+    height: 300px;
+    object-fit: cover;
+}
+
+
 .carousel-img {
     height: 600px;
+}
+
+#info {
+    background-color: $principal;
+    color: $blanco;
+    padding: 25px;
+}   
+
+.imgAlta {
+    height: 500px;
+    object-fit: contain;
+}
+
+.imgAncha {
+    height: 300px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+#dobleImagen {
+    background-color: $blanco;
+    padding: 25px;
 }
 
 
