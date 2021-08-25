@@ -367,6 +367,14 @@ img {
   text-decoration: none;
 }
 
+.carousel-inner {
+  height: 600px;
+}
+
+.carousel-img {
+  height: 600px;
+}
+
 /* Social Media Icons */
 .social-media-list {
   position: relative;
