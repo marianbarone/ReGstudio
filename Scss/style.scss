@@ -438,7 +438,69 @@ img {
     padding: 25px;
 }
 
+.modal-full {
+    width: 100vw;
+    height: 100vh;
+}
+  
+.modal-full .modal-dialog {
+    margin: 0;
+    height: 100%;
+}
+  
+.modal-full .modal-content {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
 
+.modal-full .modal-content .modal-header {
+    width: 100vw;
+    background-color: $principal;
+    color: $blanco;
+}
+
+.close {
+    color: $blanco;
+}
+  
+.modal-full .modal-content .modal-body {
+    padding: 0;
+}
+  
+.modal-full .modal-content .carousel {
+    height: 100%;
+}
+  
+.modal-full .modal-content .carousel-actions {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+  
+.modal-full .modal-content .carousel-inner {
+    height: 100%;
+}
+  
+.modal-full .modal-content .carousel-inner>.carousel-item {
+    height: 100%;
+    top: 0;
+}
+  
+.modal-full .modal-content .carousel-inner>.carousel-item>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    object-fit: contain;
+}
+  
 /* Social Media Icons */
 .social-media-list {
   position: relative;
