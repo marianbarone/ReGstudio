@@ -520,6 +520,21 @@ img {
   color: #000;
 }
 
+.pagination .page-link {
+  background: #f9f9f9;
+  color: #3D3D3D;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item.active .page-link {
+  color: #f9f9f9;
+  background: #3D3D3D;
+  border-color: #3D3D3D;
+}
+
 #footer .container-fluid .col-sm-6 a {
   font-style: normal;
   font-weight: normal;

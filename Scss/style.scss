@@ -538,6 +538,22 @@ img {
   color: #000;
 }
 
+.pagination .page-link {
+    background: $blanco;
+    color: $principal;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item.active .page-link {
+    color: $blanco;
+    background: $principal;
+    border-color: $principal;
+}
+
+
 #footer .container-fluid .col-sm-6 a {
     font-style: normal;
     font-weight: normal;
