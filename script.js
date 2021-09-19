@@ -102,3 +102,45 @@ var $modalCasaF = $('#modalCasaF').modal({
 $('.overlayCasaF').on('click', function() {
     $modalCasaF.modal('show');
 });
+
+var $modalNordicHomes = $('#modalNordicHomes').modal({
+    show: false
+});
+$('.overlayNordicHomes').on('click', function() {
+    $modalNordicHomes.modal('show');
+});
+
+var $modalPHCarrasco = $('#modalPHCarrasco').modal({
+    show: false
+});
+$('.overlayPHCarrasco').on('click', function() {
+    $modalPHCarrasco.modal('show');
+});
+
+var $modalModuloSanitario = $('#modalModuloSanitario').modal({
+    show: false
+});
+$('.overlayModuloSanitario').on('click', function() {
+    $modalModuloSanitario.modal('show');
+});
+
+var $modalTalcahuano = $('#modalTalcahuano').modal({
+    show: false
+});
+$('.overlayTalcahuano').on('click', function() {
+    $modalTalcahuano.modal('show');
+});
+
+var $modalFachadas = $('#modalFachadas').modal({
+    show: false
+});
+$('.overlayFachadas').on('click', function() {
+    $modalFachadas.modal('show');
+});
+
+var $modalPaulHarris = $('#modalPaulHarris').modal({
+    show: false
+});
+$('.overlayPaulHarris').on('click', function() {
+    $modalPaulHarris.modal('show');
+});
