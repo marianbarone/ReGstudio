@@ -144,3 +144,73 @@ var $modalPaulHarris = $('#modalPaulHarris').modal({
 $('.overlayPaulHarris').on('click', function() {
     $modalPaulHarris.modal('show');
 });
+
+var $modalGarzon = $('#modalGarzon').modal({
+    show: false
+});
+$('.overlayGarzon').on('click', function() {
+    $modalGarzon.modal('show');
+});
+
+var $modalInteriores = $('#modalInteriores').modal({
+    show: false
+});
+$('.overlayInteriores').on('click', function() {
+    $modalInteriores.modal('show');
+});
+
+var $modalViviendasBarcelona = $('#modalViviendasBarcelona').modal({
+    show: false
+});
+$('.overlayViviendasBarcelona').on('click', function() {
+    $modalViviendasBarcelona.modal('show');
+});
+
+var $modalE60 = $('#modalE60').modal({
+    show: false
+});
+$('.overlayE60').on('click', function() {
+    $modalE60.modal('show');
+});
+
+var $modalCasaSM = $('#modalCasaSM').modal({
+    show: false
+});
+$('.overlayCasaSM').on('click', function() {
+    $modalCasaSM.modal('show');
+});
+
+var $modalPaseoComercial = $('#modalPaseoComercial').modal({
+    show: false
+});
+$('.overlayPaseoComercial').on('click', function() {
+    $modalPaseoComercial.modal('show');
+});
+
+var $modalDaTorrinha = $('#modalDaTorrinha').modal({
+    show: false
+});
+$('.overlayDaTorrinha').on('click', function() {
+    $modalDaTorrinha.modal('show');
+});
+
+var $modalEO = $('#modalEO').modal({
+    show: false
+});
+$('.overlayEO').on('click', function() {
+    $modalEO.modal('show');
+});
+
+var $modalCF = $('#modalCF').modal({
+    show: false
+});
+$('.overlayCF').on('click', function() {
+    $modalCF.modal('show');
+});
+
+var $modalAH = $('#modalAH').modal({
+    show: false
+});
+$('.overlayAH').on('click', function() {
+    $modalAH.modal('show');
+});
